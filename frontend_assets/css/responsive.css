@@ -1,0 +1,221 @@
+@media only screen and (max-width:1199.99px) {
+.currentOrder  .filterBlk.filter4Grid .filterItem {
+    width: 33.33%;
+}
+.currentOrder .pageHead {
+    margin-right: 30px;
+}
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media only screen and (max-width: 991.98px) {
+.top-header .right-info li.mr-20 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.headerIcon {
+    order: 0;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.btn.theme-btn.signupBtn {
+    padding: 8px 12px;
+}
+button.navbar-toggler {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+}
+.footer_section .col-lg-3 {
+    margin-bottom: 35px;
+}
+.currentOrder .filterBlk {
+    flex: auto;
+    margin: 0 -8px !important;
+}
+.pageHead {
+    width: 100%;
+}
+/*.dataTable.fixedHeader-floating {
+    display: none;
+}*/
+table.dataTableHistory2.table.table-striped.table-bordered.dataTable.dtr-inline.collapsed.fixedHeader-floating {
+    top: 150px !important;
+}
+.currentOrder.ticketPage .filterBlk.filter4Grid .filterItem {
+    width: 50%;
+}
+.uploadNewId {
+    flex: auto;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+.srImgView img {
+    max-width: 100%;
+}
+.srMoreInfoBlk {
+    flex-wrap: wrap;
+}
+.srImgView {
+    margin-right: 0;
+}
+.srCntView {
+    margin-top: 10px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 767.98px) and (max-width: 991.98px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 767.98px) {
+.navbar.navHeader {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.top-header .left-info {
+    text-align: center;
+}
+.top-header .right-info {
+    text-align: center;
+    margin-top: 10px;
+}
+.top-header .left-info li {
+    margin: 0 10px;
+}
+.bottom_footer_main {
+    flex-wrap: wrap;
+}
+.bottom_footer_wrapper {
+    order: 2;
+    width: 100%;
+    margin-top: 15px;
+}
+.pmtMethodImg {
+    margin: 0 auto;
+}
+.innerPageWrapper {
+    padding-top: 153px;
+}
+.currentOrder .filterBlk.filter4Grid .filterItem {
+    width: 50%;
+}
+.currentOrder .filterBlk.filter4Grid .filterItem:first-child {
+    width: 100%;
+        margin-bottom: 10px;
+}
+.currentOrder.ticketPage .filterBlk.filter4Grid .filterItem {
+    width: 100%;
+}
+.quoteImgBlk{
+    display: none;
+}
+.stickeySidebar{
+    display: none;
+}
+}
+@media only screen and (min-width: 641px) and (max-width: 767.98px) {}
+
+@media only screen and (max-width: 640.98px) {
+
+}
+
+@media only screen and (max-width: 575.98px) {
+ .footer_section .col-lg-3:last-child {
+    margin-bottom: 0;
+}
+.tackBox .btn {
+    right: 8px;
+    height: 45px;
+    top: 8px;
+    padding: 6px 20px;
+}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+.lsBox {
+    padding: 40px 20px;
+}
+.ticketAct {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 15px;
+}
+}
+
+@media only screen and (max-width:400px) {
+
+}
+@media only screen and (max-width:479px) {
+
+}
+
+/*@media only screen and (max-width: 37.98px) {
+
+}*/
+@media only screen and (max-width: 374.98px) {
+.navbar-brand img {
+    max-width: 125px;
+}
+.innerPageWrapper {
+    padding-top: 140px;
+}
+.currentOrder .filterBlk.filter4Grid .filterItem {
+    width: 100%;
+    margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width: 359px) {
+.tackBox .btn {
+    position: static;
+    margin-top: 10px;
+    width: 100%;
+}
+.navbar-brand img {
+    max-width: 115px;
+}
+.csForm .input-group-append span {
+    font-size: 14px;
+    min-width: 40px;
+    padding: 0 4px;
+}
+.top-header .left-info li {
+    margin: 0 5px;
+}
+.top-header .left-info li a, .top-header .right-info li a {
+    font-size: 12px;
+}
+.btn.theme-btn.signupBtn {
+    padding: 6px 9px;
+    font-size: 15px;
+}
+button.navbar-toggler {
+    width: 36px;
+    height: 36px;
+}
+.innerPageWrapper {
+    padding-top: 130px;
+}
+}
+
+@media screen and (min-width:640px) and (max-width:767px){}

@@ -1,0 +1,110 @@
+.error{
+color:red;
+}
+#idproof-error{
+    margin-top: 61px;
+
+}
+.dataTable123  th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: none !important;
+}
+.dataTableHistory21  thead tr {
+    background: #004866;
+}
+.dataTableHistory21  th {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    border: none !important;
+}
+.nav-tabs .nav-item.active .nav-link{
+    border-color: #004866;
+    color: #004866;
+}
+.iti__flag-container {
+height: 50px;
+}
+.orderPlaced img {
+    max-width: 80px;
+    margin-bottom: 6px;
+}
+
+.orderPlaced {
+    text-align: center;
+    padding: 40px 0;
+}
+.orderPlaced p {
+    font-size: 14px;
+    max-width: 450px;
+    margin: 0 auto;
+    color: #666;
+    line-height: 24px;
+}
+
+.orderPlaced h2 {
+    font-weight: 600 !important;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+
+.priceValue.overflowp {
+    max-height: 180px;
+    overflow: auto;
+    margin-right: -20px;
+    padding-right: 20px;
+}
+
+
+#tracking_id-error{
+
+    margin-right: 368px;
+    color: white;
+
+}
+.emailContent  img {
+width: 100%;
+max-width: 120px;
+}
+.emailContent h2 {
+font-size: 24px;
+color: #32325d;
+font-weight: 600;
+}
+.emailContent h3 {
+padding: 18px;
+font-size: 16px;
+line-height: 25px;
+color: #666;
+font-weight: 400 !important;
+}
+.emailContent p {
+color: #666;
+line-height: 22px;
+font-size: 16px;
+margin-bottom: 20px;
+}
+.emailContent .btn.btnTheme {
+padding: 8px 14px;
+margin-top: -10px;
+}
+.verifyBlock.emailContent.boxViewBorder {
+    max-width: 600px;
+    text-align: center;
+    padding: 15px 15px 30px;
+    margin: 10px auto;
+}
+.emailContent h3 span {
+font-weight: 600;
+}
+p.disclaim_clsd {
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 5px;
+}
+.StepProgress-item.is-done.newe::before {
+    width: 100% !important;
+}

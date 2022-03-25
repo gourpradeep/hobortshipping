@@ -1,0 +1,13 @@
+{
+	"description": "Hobort Shipping",
+	"name": "Hobort Shipping",
+	"type": "project",
+	"homepage": "https://www.hobortshipping.com",
+	"license": "MIT",
+	"require": {
+		"vlucas/phpdotenv": "^4.1",
+		"aws/aws-sdk-php": "^3.144",
+		"phpmailer/phpmailer": "^6.1",
+		"twilio/sdk": "^6.9"
+	}
+}
