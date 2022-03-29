@@ -7,281 +7,68 @@
    height: 15px;
    width: 15px;
    }
+   .modal-open{
+      padding-right:0px !important;
+   }
+   #quotesModl{
+      padding-right:0px !important;
+   }
+   #tracking_id-error {
+    color: red;
+    float: left;
+    margin-right: 0px;
+   }
+   p.disclaim_clsd {
+    font-size: 12px;
+    margin: 0px;
+    margin-left: 5px;
+    color: #767676;
+}
 </style>
 <div class="mainWrapper">
    <section class="bannerSec">
-      <div class="container">
-      <div class="text-center">
-         <div class="bannerText animate__animated animate__zoomIn">
-            <h2>Freight & Logistics Services</h2>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
-            <button class="nb btn btnTheme" type="submit" data-toggle="modal" data-target="#quotesModl" data-whatever="quotesModl">Request A Quote</button>
-         </div>
-      </div>
-      </div>
-   </section>
-   <section class="formSection">
-      <div class="container">
+      <div class="container custom-container">
+      <div class="bannerText">
          <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-8">
+               <div class="animate__animated animate__fadeInDown">
+                     <h2>Freight & Logistics Services</h2>
+                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+               </div>
+            </div>
+            <div class="col-md-4">
             <div class="bannerCntBlk text-center">
                <div class="bannerCnt">
                   <div class="bannerTrack animate__animated animate__zoomIn">
                      <h3>Track Your Shipment</h3>
+                     <div class="shapeCs">o</div>
                      <form action="<?php echo base_url('home/track')?>" class="form-horizontal" method="GET" id="track">
                         <div class="tackBox">
                            <input type="text" name="tracking_id" id="tracking_id" placeholder="Enter your tracking number">
-                           <button id="track_sub" class="nb btn btnTheme" type="submit">Track Order Now</button>
+                           <button id="track_sub" class="nb btn btnTheme" type="submit" onclick="csAdd()">Track Order Now</button>
                         </div>
                      </form>
                   </div>
                </div>
             </div>
+            </div>
          </div>
-         </div>
+         
+      </div>
       </div>
    </section>
-   <section class="aboutUsSec sec-pad-50 mt-5">
-      <div class="aboutUsSec_overlay"></div>
-         <div class="container mt-4">
-            <div class="row">
+   <section class="requestQuote sec-pad-50">
+         <div class="container custom-container">
+         <div class="row">
                <div class="col-lg-6">
-                  <div class="aboutBlk">
-                     <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>about-img.png">
-                  </div>
-               </div>
-               <div class="col-lg-6">
-               <div class="aboutBlk">
-               <span class="sub-title">About Company</span>
-                     <h2>Hobort Shipping services is part of a worldwide group of transport and logistics companies.</h2>
-                     <p>Hobort Shipping services is part of a worldwide group of transport and logistics companies registered facilitate international trade between the world’s major economies and among emerging markets across all continents. Founded in 2018 and headquartered in Accra, Ghana, Hobort is a limited liability company. Hobort delivers goods and services to customers, international business partners and local communities. With access to an integrated global network of road, rail and sea transport resources, the company prides itself on delivering global service with local knowledge. We use a variety of e-business solutions for efficient cargo bookings. Our customers are assure of safe and secure handling of all goods.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-   </div>
-</section>
-
-<section class="servicesSec bg-light sec-pad-50">
-   <div class="container">
-      <div class="secTitle text-center">
-         <h2>INTERNATIONAL SHIPPING COMPANY</h2>
-         <!-- <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p> -->
-      </div>
-      <div id="serviceSlider" class="owl-carousel owl-theme extra-space serviceSliderBlk">
-         <div class="item">
-            <div class="tittle_sec1_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/1.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Air Freight</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Hobort can meet all your transportation needs globally by our best Air Freight Services. Whether you're flying finished goods or raw material or equipment, you can count on us to get your freight where it's going - on time. </p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr1">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/2.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Sea Freight</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>At Hobort we place value and understand the importance of providing a reliable and consistent international freight service. We have developed a full range of freight forwarding services.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr2">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <!-- <div class="item">
-            <div class="tittle_sec3_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/3.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Concierge Shipping</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Let us place the order on your behalf. Select the desired items and we purchase for you from the many countries where we are available and deliver to your desired location.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr3">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div> -->
-         <div class="item">
-            <div class="tittle_sec4_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/4.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Courier & Express Services</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>From a small envelope or package to a full truckload, we are committed to offering superior levels of essential service with the most flexible options for your time-sensitive deliveries.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr4">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/5.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Customs brokers</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>At Hobort, we process hundreds of international packages on a daily basis. With brokerage facilities in the top world markets, we cover the global trading centers where you do business with consistency, reliability, and flexibility.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr5">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/6.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Freight consolidation</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Many of our customers ship from and to the same centers and destinations, so we can consolidate your smaller shipments with others to deliver to the same consignees.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr6">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/7.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>General cargo</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Hobort offers a very professional cargo handling service to facilitate and to fulfill our commitment to our clients.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr7">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/8.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Large and oversize freight</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Shipping large and oversized cargo is a matter of detail, proper planning, execution and this is what we offer our client.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr8">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-         <div class="item">
-            <div class="tittle_sec2_wrapper tittle_sec_wrapper">
-               <div class="srImgBlk">
-                  <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/9.jpg">
-               </div>
-               <div class="col-lg-12">
-                  <div class="tittle_cont1_wrapper">
-                     <div class="tittle_cont1">
-                        <h3>Door 2 Door</h3>
-                     </div>
-                  </div>
-                  <div class="title_bottom_cont1">
-                     <p>Service for small and medium-sized businesses. Shipping cargo door-to-door, over land and sea, our team will help you focus on what you do best by taking care of the logistics.</p>
-                  </div>
-               </div>
-               <div class="srreadMore">
-                  <a class="serviceScroll" href="<?php echo base_url('services')?>#sr9">Read More <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-</div>
-
-<div class="modal fade" id="quotesModl" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header align-items-center">
-        <h5 class="modal-title" id="quotesModl">Request a quote</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <div class="row">
-               <div class="col-lg-12 mx-auto">
                   <div class="quoteForm">
-                     <!-- <div class="quoteHead">
-                        <h1 class="animate__animated animate__pulse animate__infinite animate__slow">Request A Quote</h1>
-                     </div> -->
-                     <div class="quoteBody">
-                        <!--                                     <form class="csForm">
-                           -->        
+                     <div class="quoteHead">
+                        <h1>Request A Quote</h1>
+                     </div>
+                     <div class="quoteBody">      
                            <div class="csForm">                           
                         <div class="form-group">
                            <label class="inLabel">Delivery Type</label>
-                           <!--  <select id="delveryType" class="form-control CsSelect">
-                              <option value="1">Air freight</option>
-                              <option value="2">Sea freight</option>
-                              <option value="3">Courier &amp; Express services</option>
-                              <option value="4">Concierge Shipping</option>
-                              </select> -->
                            <select class ="form-control CsSelect" id="delveryType" onclick="all_calculation();">
                               <?php foreach (getAllDelivery() as $key => $value) { ?>
                               <option value="<?php echo $value['id']?>"><?php echo $value['value']?></option>
@@ -373,7 +160,7 @@
                               </div>
                               <div class="form-group">
                                  <div class="quoteAmt">
-                                    <h2>Total Amount <div><span id="totalh">$</span><span id="total">00.00</span></div><img style="display: none;" id="load" class="load" src="<?php echo $content_images;?>/load.png"></h2>
+                                    <h2>Total Amount <div><span id="totalh"><b>$</b></span><span id="total"><b>00.00</b></span></div><img style="display: none;" id="load" class="load" src="<?php echo $content_images;?>/load.png"></h2>
                                     <!--                                                              <h2><span id="totalh">$</span><span id="total"> 00.00</span>
                                        -->                                                        
                                  </div>
@@ -444,7 +231,7 @@
                               </div>
                               <div class="form-group">
                                  <div class="quoteAmt">
-                                 <h2>Total Amount<div> <span id="totalh">$</span><span id="total_sea">00.00</span><dv><img style="display: none;" id="load" class="load" src="<?php echo $content_images;?>/load.png"></h2>
+                                 <h2>Total Amount<div> <span id="totalh"><b>$</b></span><span id="total_sea"><b>00.00</b></span><dv><img style="display: none;" id="load" class="load" src="<?php echo $content_images;?>/load.png"></h2>
                                     <!-- <h2>Total Amount<span id="totalh">$</span><span id="total_sea">00.00</span><img style="display: none;" id="load" class="load" src="<?php echo $content_images;?>/load.png">
                                     </h2> -->
                                  </div>
@@ -604,8 +391,205 @@
                </div>
             </div>
       </div>
-    </div>
-  </div>
+         </div>
+   </div>
+</section>
+   <!-- <section class="aboutUsSec sec-pad-50 mt-5">
+      <div class="aboutUsSec_overlay"></div>
+         <div class="container custom-container mt-4">
+            <div class="row">
+               <div class="col-lg-5">
+                  <div class="aboutBlk animate__animated animate__fadeInLeft">
+                     <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>about-img.png">
+                  </div>
+               </div>
+               <div class="col-lg-7">
+               <div class="aboutBlk animate__animated animate__fadeInRight">
+               <span class="sub-title">About Company</span>
+                     <h2>Hobort Shipping services is part of a worldwide group of transport and logistics companies.</h2>
+                     <p>Hobort Shipping services is part of a worldwide group of transport and logistics companies registered facilitate international trade between the world’s major economies and among emerging markets across all continents. Founded in 2018 and headquartered in Accra, Ghana, Hobort is a limited liability company. Hobort delivers goods and services to customers, international business partners and local communities. With access to an integrated global network of road, rail and sea transport resources, the company prides itself on delivering global service with local knowledge. We use a variety of e-business solutions for efficient cargo bookings. Our customers are assure of safe and secure handling of all goods.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+</section> -->
+
+<section class="servicesSec bg-light sec-pad-50">
+   <div class="container custom-container">
+      <div class="secTitle text-center">
+         <h2>INTERNATIONAL SHIPPING COMPANY</h2>
+         <!-- <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.</p> -->
+      </div>
+      <div id="serviceSlider" class="owl-carousel owl-theme extra-space serviceSliderBlk">
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/1.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-fighter-jet"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Air Freight</h3>
+                           <p>Hobort can meet all your transportation needs globally by our best Air Freight Services. Whether you're flying finished goods or raw material or equipment, you can count on us to get your freight where it's going - on time. </p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase"  href="<?php echo base_url('services')?>#sr1">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+            
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/2.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-ship"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Sea Freight</h3>
+                           <p>At Hobort we place value and understand the importance of providing a reliable and consistent international freight service. We have developed a full range of freight forwarding services.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr2">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+            
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/4.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-truck"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Courier & Express Services</h3>
+                           <p>From a small envelope or package to a full truckload, we are committed to offering superior levels of essential service with the most flexible options for your time-sensitive deliveries.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr4">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+            
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/5.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-warehouse"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Customs brokers</h3>
+                           <p>At Hobort, we process hundreds of international packages on a daily basis. With brokerage facilities in the top world markets, we cover the global trading centers where you do business with consistency, reliability, and flexibility.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr5">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+            
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/6.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-box"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Freight consolidation</h3>
+                           <p>Many of our customers ship from and to the same centers and destinations, so we can consolidate your smaller shipments with others to deliver to the same consignees.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr6">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+            
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/7.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-truck-loading"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>General cargo</h3>
+                           <p>Hobort offers a very professional cargo handling service to facilitate and to fulfill our commitment to our clients.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr7">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                        <div class="ft-service-img position-relative">
+                        <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/8.jpg"> -->
+                        </div>
+                        <div class="ft-service-text-icon position-relative">
+                        <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                        <i class="fas fa-shapes"></i>
+                     </div>
+                     <div class="ft-service-text position-relative headline pera-content">
+                           <h3>Large and oversize freight</h3>
+                           <p>Shipping large and oversized cargo is a matter of detail, proper planning, execution and this is what we offer our client.</p>
+                     </div>
+                     <div class="more-btn position-absolute">
+                           <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr8">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                        </div>
+                     </div>
+               </div>
+           
+
+            <div class="item">
+               <div class="ft-service-innerbox-3 position-relative">
+                     <div class="ft-service-img position-relative">
+                     <!-- <img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>services/9.jpg"> -->
+                     </div>
+                     <div class="ft-service-text-icon position-relative">
+                     <div class="ft-service-icon d-flex align-items-center justify-content-center position-absolute">
+                     <i class="fas fa-shipping-fast"></i>
+                  </div>
+                  <div class="ft-service-text position-relative headline pera-content">
+                        <h3>Door 2 Door</h3>
+                        <p>Service for small and medium-sized businesses. Shipping cargo door-to-door, over land and sea, our team will help you focus on what you do best by taking care of the logistics.</p>
+                  </div>
+                  <div class="more-btn position-absolute">
+                        <a class="d-flex align-items-center justify-content-center text-uppercase" href="<?php echo base_url('services')?>#sr9">Read More <i class="fas fa-arrow-right"></i></a>
+                  </div>
+                     </div>
+                  </div>
+            </div>
+            
+
+</section>
 </div>
 <script type="text/javascript">
    var track = $("#track");

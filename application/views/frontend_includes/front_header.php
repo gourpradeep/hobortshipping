@@ -95,28 +95,19 @@
    </head>
    <body>
       <header class="mainHeader">
-            <div class="container">
+            <div class="container custom-container">
             <div class="top-header">
-               <div class="row align-items-center">
-                  <div class="col-lg-12 col-sm-12 col-12">
-                     <ul class="left-info">
-                        <li><a href="mailto:support@gmail.com"><i class="far fa-envelope"></i>info@hobortshipping.com</a></li>
-                        <li><a href="tel:+1 770 676 6044"><i class="fas fa-phone-volume"></i>+1 770 676 6044</a></li>
-                        <li><a href="tel:+1 404 543 4422"><i class="fab fa-whatsapp"></i>+1 404 543 4422</a></li>
-                     </ul>
-                  </div>
-                  <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                     <ul class="right-info">
-                        <li class="mr-20"><a href="<?php echo base_url().'contact-us'?>">Support</a></li>
-                        <li class="mr-20"><a href="<?php echo base_url();?>">Track Your Shipment</a></li>
-                        <li class="mr-20"><a target="_blank" href="https://ghanafeed.com/from-local-to-global-find-out-about-hobort-shipping-services-the-ghanaian-shipping-company-that-is-shipping-packages-affordably-to-any-part-of-the-world/">News &amp; Media</a></li>
-                     </ul>
-                  </div> -->
+               <div class="container custom-container">
+                  <ul class="left-info">
+                     <li><a href="mailto:support@gmail.com"><i class="far fa-envelope"></i>info@hobortshipping.com</a></li>
+                     <li><a href="tel:+1 770 676 6044"><i class="fas fa-phone-volume"></i>+1 770 676 6044</a></li>
+                     <li><a href="tel:+1 404 543 4422"><i class="fab fa-whatsapp"></i>+1 404 543 4422</a></li>
+                  </ul>
                </div>
             </div>
          </div>
          <nav class="navbar navbar-expand-lg navbar-light bg-light navHeader">
-            <div class="container">
+            <div class="container custom-container">
                <a class="navbar-brand" href="<?php echo base_url();?>"><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>logo.png"></a>
                <?php if(is_user_logged_in()) { ?>
                <div class="headerIcon">
@@ -132,7 +123,7 @@
                <?php } else{?>
                <div class="headerIcon">
                   <div>
-                     <a class="btn theme-btn signupBtn ripple" href="<?php echo base_url().'auth/login'?>"><i class="fas fa-sign-in-alt btn-icon mr-1"></i> Log In|Sign Up</a>
+                     <a class="btn theme-btn signupBtn ripple" href="<?php echo base_url().'auth/login'?>"><i class="fas fa-sign-in-alt btn-icon mr-1"></i> Log In</a>
                   </div>
                </div>
                <?php }?>
@@ -176,9 +167,9 @@
                      <li class="nav-item">
                         <a class="nav-link <?php  echo (strtolower($this->router->fetch_class()) == "home" && $this->router->fetch_method()=='services') ? "active" : "" ?>" href="<?php echo base_url().'services'?>">Services</a>
                      </li>
-                     <li><a class="nav-link" href="<?php echo base_url().'contact-us'?>">Support</a></li>
+                     <!-- <li><a class="nav-link" href="<?php echo base_url().'contact-us'?>">Support</a></li>
                         <li><a  class="nav-link" href="<?php echo base_url();?>">Track Your Shipment</a></li>
-                        <li><a  class="nav-link" target="_blank" href="https://ghanafeed.com/from-local-to-global-find-out-about-hobort-shipping-services-the-ghanaian-shipping-company-that-is-shipping-packages-affordably-to-any-part-of-the-world/">News &amp; Media</a></li>
+                        <li><a  class="nav-link" target="_blank" href="https://ghanafeed.com/from-local-to-global-find-out-about-hobort-shipping-services-the-ghanaian-shipping-company-that-is-shipping-packages-affordably-to-any-part-of-the-world/">News &amp; Media</a></li> -->
                      <?php } ?>
                   </ul>
                </div>
