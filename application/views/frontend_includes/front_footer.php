@@ -1,6 +1,4 @@
 <footer>
-				<div class="color-part2"></div>
-				<div class="color-part"></div>
 				<div class="container custom-container">
 					<div class="row block-content">
 						<div class="col-md-3 col-sm-12">
@@ -46,16 +44,19 @@ Saturday - 9am - 2pm</span>
 							</div>
 						</div>
 					</div>
-               <div class="pmtMethodImg">
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>1.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>2.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>3.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>4.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>5.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>6.png"></a>
-            <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>7.png"></a>
-         </div>
-					<div class="copy">Copyright 2021 © Hobort Shipping</div>
+               <div class="bottomCopyright d-flex justify-content-between align-items-center">
+				<div class="copy">Copyright 2022 © <span>Hobort Shipping</span></div>
+
+                   <div class="pmtMethodImg">
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>1.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>2.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>3.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>4.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>5.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>6.png"></a>
+                        <a href=""><img src="<?php echo getenv('APP_FRONT_ASSETS_IMAGES') ?>7.png"></a>
+                    </div>
+               </div>
 				</div>
 			</footer>
 <script src="<?php echo getenv('APP_FRONT_ASSETS_JS') ?>/owl.carousel.min.js"></script>

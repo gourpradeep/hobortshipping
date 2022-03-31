@@ -11,6 +11,7 @@ class Home extends Common_Front_Controller {
     }
 
     public function index() {
+
         $data['page_title'] = 'Home';
 
         $data['air_freight_item'] = $this->home_model->getAllItem(AIR_FREIGHT_ITEMS,array('status'=>1));
@@ -289,6 +290,7 @@ class Home extends Common_Front_Controller {
     }
 
     public function about(){
+
         if ($this->uri->segment(1) === 'home') {
             redirect('/about','location',301);
         }

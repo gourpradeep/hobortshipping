@@ -73,6 +73,8 @@
       <link href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css">
       <link href="https://datatables.net/release-datatables/extensions/Responsive/css/responsive.dataTables.css" rel="stylesheet" type="text/css">
       <link href="https://cdn.datatables.net/fixedheader/3.1.8/css/fixedHeader.bootstrap4.min.css" rel="stylesheet" type="text/css">
+
+      <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin+Condensed&family=Fjalla+One&family=Lato&family=Signika:wght@300;400&display=swap" rel="stylesheet">
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
       <script> 
