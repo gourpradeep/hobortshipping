@@ -163,4 +163,15 @@ class Customer_details_model extends CI_Model {
         });
         return array_keys($result);
     }
+
+    public function file_download($id){
+        $table = 'users';
+        $this->db->select('id_proof');
+        $this->db->from($table);
+        $this->db->where('userID', $id);
+        $query = $this->db->get();
+        return $query->row();
+
+    }
+
 }

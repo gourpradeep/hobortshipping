@@ -80,9 +80,14 @@
                                        <?php if ($dataexist->id_proof_status==1) { ?>
                                        <a href="javascript:void(0)" onclick="myFunction(<?php echo $dataexist->userID?>,2,'ID Proof')" id="accept" class="accept">APPROVE</a>
                                        <a href="javascript:void(0)" onclick="myFunction(<?php echo $dataexist->userID?>,3,'ID Proof')" id="reject" class="deny">REJECT</a>
+
+                                       <?php $id = $dataexist->userID; ?>
+                                       <a href="<?php echo base_url().'admin/customer/file_download/'.$id?>" style="    color: white;background: #3b3689;   padding: 6px 14px;border-radius: 4px;    font-weight: 600;margin-left: 20px;" >Download</a>
+                                       
                                        <div class="active-icon" id="app">       Approved</div>
                                        <div class="inactive" id="rej">Rejected</div>
                                        <?php } ?>
+
                                     </div>
                                  </div>
                               </div>

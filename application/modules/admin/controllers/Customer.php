@@ -299,4 +299,16 @@ class Customer extends Common_Back_Controller {
             }
         }
     }
+
+    public function file_download($id){
+        $this->load->model('customer_details_model');
+        if(!empty($id)){
+            $this->load->helper('download');
+            $result = $this->customer_details_model->file_download($id);
+            $idproof = getenv('S3_ID_PROOF_MEDIUM') . $result->id_proof;
+            $filename=$result->id_proof;
+            $data = file_get_contents($idproof);
+            force_download($filename, $data);
+        }
+    }
 }
